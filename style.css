@@ -177,7 +177,25 @@ a:active {color: ##33BB99;}
 }
 .fancy-button {
   margin: 10px auto;
-  position: relative;
+  position: relative;       
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}    
+.fancy-button::selection 
+{
+ background-color:transparent;
+} 
+.fancy-button::-moz-selection
+{
+   background-color:transparent;
+}
+.fancy-button:focus {
+	outline: none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
 }
 
 /*frills*/
